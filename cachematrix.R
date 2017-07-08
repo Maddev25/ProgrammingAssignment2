@@ -15,7 +15,7 @@ list(set=set, get=get,
    getmatrix=getmatrix)
 }
 
-##
+## To get the Cached Data if the matrix is not changed else recompute
 cacheSolve <- function(x=matrix(), ...) {
     m<-x$getmatrix()
     if(!is.null(m)){
