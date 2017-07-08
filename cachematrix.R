@@ -1,10 +1,12 @@
+## R Programming Assignment 2 
+## Matrix Inverse Caching and Lexical Scoping example
 
 makeCacheMatrix <- function(x = matrix()) {
   m<-NULL
   set<-function(y){
-  x<<-y
-  m<<-NULL
-}
+          x<<-y
+          m<<-NULL
+        }
 get<-function() x
 setmatrix<-function(solve) m<<- solve
 getmatrix<-function() m
@@ -13,6 +15,7 @@ list(set=set, get=get,
    getmatrix=getmatrix)
 }
 
+##
 cacheSolve <- function(x=matrix(), ...) {
     m<-x$getmatrix()
     if(!is.null(m)){
